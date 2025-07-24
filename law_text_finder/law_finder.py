@@ -10,7 +10,7 @@ from .request import retrieve_law_page
 #        text: text to put in the search bar
 #        start_date: starting date for the research
 #        end_date: end date for the research
-def find_law_text(denomination, text, start_date, end_date):
+def find_law_text(denomination="", text="", start_date="", end_date=""):
 
     # Retrieve the list of laws from the research
     data = retrieve_law_page(denomination, 
